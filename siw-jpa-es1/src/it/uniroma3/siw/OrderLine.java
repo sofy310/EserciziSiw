@@ -25,7 +25,7 @@ public class OrderLine {
 	private Integer quantity;
 	
 	
-	@ManyToOne(fetch=FetchType.EAGER)
+	@ManyToOne(fetch=FetchType.EAGER) //per modificare la strategia di fetch
 	private Product product;
 	
 	public OrderLine() {
