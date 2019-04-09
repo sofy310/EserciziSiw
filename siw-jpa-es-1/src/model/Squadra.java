@@ -22,7 +22,7 @@ public class Squadra {
 	 * in questo caso va utilizzata questa strategia di fetch perchè ogni volta che si crea una squadra sono richiesti i nomi dei suoi giocatori. */
 	@OneToMany(fetch = FetchType.EAGER)
 	@JoinColumn(name = "squadra")
-	public List<Giocatore> giocatori;
+	private List<Giocatore> giocatori;
 	
 	
 	public Squadra() {
