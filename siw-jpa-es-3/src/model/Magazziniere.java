@@ -11,6 +11,5 @@ public class Magazziniere {
 	
 	private String nome;
 	
-	private 
 
 }

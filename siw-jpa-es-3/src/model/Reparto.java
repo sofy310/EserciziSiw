@@ -20,11 +20,6 @@ public class Reparto {
 	
 	private int piano;
 	
-	@OneToMany(mappedBy="reparto")
-	private List <Prodotto> prodotti;
-	
-	@ManyToMany
-	private List <Magazziniere> magazzinieri;
 
 	public Long getId() {
 		return id;

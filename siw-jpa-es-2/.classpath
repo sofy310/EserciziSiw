@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="/home/sofia/Scaricati/hibernate-release-5.4.2.Final/lib/envers/hibernate-envers-5.4.2.Final.jar"/>
 	<classpathentry kind="lib" path="/home/sofia/Scaricati/hibernate-release-5.4.2.Final/lib/jpa-metamodel-generator/hibernate-jpamodelgen-5.4.2.Final.jar"/>
@@ -32,10 +31,6 @@
 	<classpathentry kind="lib" path="/home/sofia/Scaricati/hibernate-release-5.4.2.Final/lib/spatial/jts-core-1.16.0.jar"/>
 	<classpathentry kind="lib" path="/home/sofia/Scaricati/hibernate-release-5.4.2.Final/lib/spatial/postgresql-42.2.2.jar"/>
 	<classpathentry kind="lib" path="/home/sofia/Scaricati/hibernate-release-5.4.2.Final/lib/spatial/slf4j-api-1.6.1.jar"/>
-	<classpathentry kind="lib" path="/home/sofia/Scaricati/hibernate-release-6.0.0.Alpha1/lib/jpa-metamodel-generator/hibernate-jpamodelgen-6.0.0.Alpha1.jar"/>
-	<classpathentry kind="lib" path="/home/sofia/Scaricati/hibernate-release-6.0.0.Alpha1/lib/optional/c3p0/c3p0-0.9.5.2.jar"/>
-	<classpathentry kind="lib" path="/home/sofia/Scaricati/hibernate-release-6.0.0.Alpha1/lib/optional/c3p0/hibernate-c3p0-6.0.0.Alpha1.jar"/>
-	<classpathentry kind="lib" path="/home/sofia/Scaricati/hibernate-release-6.0.0.Alpha1/lib/optional/c3p0/mchange-commons-java-0.2.11.jar"/>
 	<classpathentry kind="lib" path="/home/sofia/Scaricati/hibernate-release-6.0.0.Alpha1/lib/required/antlr4-4.7.1.jar"/>
 	<classpathentry kind="lib" path="/home/sofia/Scaricati/hibernate-release-6.0.0.Alpha1/lib/required/antlr4-runtime-4.7.1.jar"/>
 	<classpathentry kind="lib" path="/home/sofia/Scaricati/hibernate-release-6.0.0.Alpha1/lib/required/antlr-runtime-3.5.2.jar"/>
@@ -60,5 +55,6 @@
 	<classpathentry kind="lib" path="/home/sofia/Scaricati/hibernate-release-6.0.0.Alpha1/lib/required/ST4-4.0.8.jar"/>
 	<classpathentry kind="lib" path="/home/sofia/Scaricati/hibernate-release-6.0.0.Alpha1/lib/required/stax-ex-1.8.jar"/>
 	<classpathentry kind="lib" path="/home/sofia/Scaricati/hibernate-release-6.0.0.Alpha1/lib/required/txw2-2.3.1.jar"/>
+	<classpathentry kind="lib" path="/home/sofia/Scaricati/hibernate-release-6.0.0.Alpha1/lib/jpa-metamodel-generator/hibernate-jpamodelgen-6.0.0.Alpha1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

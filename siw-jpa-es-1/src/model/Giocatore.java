@@ -1,42 +1,35 @@
 package model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Column;
+import java.time.LocalDate;
+
+import javax.persistence.*;
 
 @Entity
 public class Giocatore {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
+	private long id;
 	
-	@Column(nullable = false, length = 50)
 	private String nome;
 	
-	@Column(nullable = false, length = 50)
 	private String cognome;
 	
-	@Column(nullable = false, length = 20)
+	private LocalDate dataDiNascita;
+	
 	private String ruolo;
 	
-	@Column(nullable = false)
 	private int altezza;
 	
-	@Column(nullable = false)
-	private long peso;
+	private int peso;
 	
-	@Column(nullable = false)
-	private String dataDiNascita;
-	
-	public Giocatore () {
+	public Giocatore() {
 		
 	}
-	
-	public Giocatore(String nome, String cognome, String dataDiNascita, String ruolo, int altezza,
-			Integer peso) {
+
+	public Giocatore(long id, String nome, String cognome, LocalDate dataDiNascita, String ruolo, int altezza,
+			int peso) {
+		this.id = id;
 		this.nome = nome;
 		this.cognome = cognome;
 		this.dataDiNascita = dataDiNascita;
@@ -44,5 +37,67 @@ public class Giocatore {
 		this.altezza = altezza;
 		this.peso = peso;
 	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getCognome() {
+		return cognome;
+	}
+
+	public void setCognome(String cognome) {
+		this.cognome = cognome;
+	}
+
+	public LocalDate getDataDiNascita() {
+		return dataDiNascita;
+	}
+
+	public void setDataDiNascita(LocalDate dataDiNascita) {
+		this.dataDiNascita = dataDiNascita;
+	}
+
+	public String getRuolo() {
+		return ruolo;
+	}
+
+	public void setRuolo(String ruolo) {
+		this.ruolo = ruolo;
+	}
+
+	public int getAltezza() {
+		return altezza;
+	}
+
+	public void setAltezza(int altezza) {
+		this.altezza = altezza;
+	}
+
+	public int getPeso() {
+		return peso;
+	}
+
+	public void setPeso(int peso) {
+		this.peso = peso;
+	}
+	
+	
+	
+	
+	
+
 
 }

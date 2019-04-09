@@ -15,8 +15,6 @@ public class Prodotto {
 	
 	private String descrizione;
 	
-	@ManyToOne
-	private Reparto reparto;
 
 	public Long getId() {
 		return id;
