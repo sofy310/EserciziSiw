@@ -17,7 +17,9 @@ public class Impiegato {
 	
 	private LocalDate dataDiNascita;
 	
-	@ManyToOne
+	/*Essendo un ManyToOne, vale la pena usare il cascade (potrei comunque non metterlo, visto che
+	non è specificato nei casi d'uso e non si tratta di una composizione, per non appesantire il sistema)*/
+	@ManyToOne(fetch=FetchType.EAGER, cascade= {CascadeType.PERSIST, CascadeType.REMOVE})
 	private Divisione divisione;
 	
 	public Impiegato() {
