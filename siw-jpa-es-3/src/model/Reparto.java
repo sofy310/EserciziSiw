@@ -1,9 +1,11 @@
 package model;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 
@@ -20,7 +22,26 @@ public class Reparto {
 	
 	private int piano;
 	
+	@OneToMany(fetch = FetchType.LAZY)
+	@JoinColumn(name = "reparto_fk")
+	private List <Magazziniere> magazzinieri;
+	
+	@OneToMany(mappedBy = "reparto", fetch = FetchType.LAZY)
+	private List<Prodotto> prodotti;
+	
 
+	
+	public Reparto() {
+	
+		
+	}
+	
+	public Reparto(Long id, String nome, int piano) {
+		this.id = id;
+		this.nome = nome;
+		this.piano = piano;
+	}
+	
 	public Long getId() {
 		return id;
 	}
@@ -45,17 +66,23 @@ public class Reparto {
 		this.piano = piano;
 	}
 
-	
-	public Reparto() {
-	
-		
+	public List<Magazziniere> getMagazzinieri() {
+		return magazzinieri;
 	}
-	public Reparto(Long id, String nome, int piano) {
-		this.id = id;
-		this.nome = nome;
-		this.piano = piano;
+
+	public void setMagazzinieri(List<Magazziniere> magazzinieri) {
+		this.magazzinieri = magazzinieri;
 	}
-	
+
+	public List<Prodotto> getProdotti() {
+		return prodotti;
+	}
+
+	public void setProdotti(List<Prodotto> prodotti) {
+		this.prodotti = prodotti;
+	}
+
+
 	
 	
 	

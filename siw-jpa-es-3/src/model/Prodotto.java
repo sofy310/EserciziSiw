@@ -15,6 +15,9 @@ public class Prodotto {
 	
 	private String descrizione;
 	
+	@ManyToOne(fetch = FetchType.LAZY)
+	private Reparto reparto;
+	
 
 	public Long getId() {
 		return id;
@@ -57,6 +60,14 @@ public class Prodotto {
 		this.nome = nome;
 		this.quantità = quantità;
 		this.descrizione = descrizione;
+	}
+
+	public Reparto getReparto() {
+		return reparto;
+	}
+
+	public void setReparto(Reparto reparto) {
+		this.reparto = reparto;
 	}
 	
 	
